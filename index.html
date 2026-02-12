@@ -5,7 +5,7 @@
 
 <style>
 body {
-  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  background: linear-gradient(to right, #cce7ff, #e0f7ff);
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
@@ -26,7 +26,7 @@ h1 {
   z-index: 2;
 }
 
-img {
+img:hover {
   width: 80%;
   max-width: 400px;
   border-radius: 15px;
@@ -126,7 +126,15 @@ document.addEventListener("DOMContentLoaded", function(){
 <body>
 
 <h1>તારી માટે ચીકુ ❤️</h1>
+  h1 {
+   animation: pulse 2s infinite:
+  }
 
+  @keyframes pulse {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.05); }
+   100% { transform: scale(1); }
+  
 <!-- Song Button -->
 <a href="https://www.youtube.com/results?search_query=young+and+beautiful+lana+del+rey" target="_blank">
 <button>🎵 Play Our Song</button>
@@ -175,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 </body>
 </html>
+
 
 
 
